@@ -1,2 +1,0 @@
-This file is created by node jsThis is updating the file using node js
-This is updating the file using node js
