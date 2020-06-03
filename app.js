@@ -46,8 +46,15 @@ yargs.command({
 yargs.command({
     command:'read',
     describe:'It can read the data',
-    handler(){
-        console.log("This can read the data of powershell")
+    builder:{
+        title:{
+            describe:'It takes the title input and find it on our json file',
+            demandOption:true,
+            type:'string'
+        }
+    },
+    handler(argv){
+        notes.readNote(argv.title)
     }
 })
 
