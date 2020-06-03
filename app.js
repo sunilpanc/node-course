@@ -39,7 +39,7 @@ yargs.command({
     command:'list',
     describe:'list of variable',
     handler(){
-        console.log("This is our list")    
+        notes.listNote()    
     }
 })
 
